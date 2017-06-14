@@ -12,8 +12,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     
+    var tasks: [Task] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tasks = makeTasks()
+        
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -28,7 +33,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
-    func makeTasks
+    func makeTasks() -> [Task] {
+        let task0 = Task()
+        task0.name = ""
+        task0.important = true
+        return [task0]
+    }
+    
     
 }
 
