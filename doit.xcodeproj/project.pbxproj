@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A25E04011EF2933600F957B2 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E04001EF2933600F957B2 /* AddViewController.swift */; };
 		A2BD83631EF13F3400F4B20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD83621EF13F3400F4B20F /* AppDelegate.swift */; };
 		A2BD83651EF13F3400F4B20F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD83641EF13F3400F4B20F /* ViewController.swift */; };
 		A2BD83681EF13F3400F4B20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BD83661EF13F3400F4B20F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A25E04001EF2933600F957B2 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		A2BD835F1EF13F3400F4B20F /* doit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BD83621EF13F3400F4B20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2BD83641EF13F3400F4B20F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				A2BD83621EF13F3400F4B20F /* AppDelegate.swift */,
 				A2BD83641EF13F3400F4B20F /* ViewController.swift */,
+				A25E04001EF2933600F957B2 /* AddViewController.swift */,
 				A2BD83661EF13F3400F4B20F /* Main.storyboard */,
 				A2BD83771EF145B600F4B20F /* Task.swift */,
 				A2BD836C1EF13F3500F4B20F /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25E04011EF2933600F957B2 /* AddViewController.swift in Sources */,
 				A2BD836B1EF13F3500F4B20F /* doit.xcdatamodeld in Sources */,
 				A2BD83781EF145B600F4B20F /* Task.swift in Sources */,
 				A2BD83651EF13F3400F4B20F /* ViewController.swift in Sources */,
@@ -309,6 +313,7 @@
 				A2BD83761EF13F3500F4B20F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

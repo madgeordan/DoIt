@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="CYU-9Q-sS8">
             <objects>
-                <viewController id="zne-Db-Cd2" sceneMemberID="viewController">
+                <viewController id="zne-Db-Cd2" customClass="AddViewController" customModule="doit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BRT-lt-9mc"/>
                         <viewControllerLayoutGuide type="bottom" id="aXG-90-ddx"/>
@@ -92,6 +92,9 @@
                                 <rect key="frame" x="169.5" y="267" width="37" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="taskAdd:" destination="zne-Db-Cd2" eventType="touchUpInside" id="osS-W6-FPW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,6 +114,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="H9k-qE-c5m" secondAttribute="trailing" constant="91" id="rUv-t6-aZV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="taskImportant" destination="H9k-qE-c5m" id="HL2-Ej-Sw5"/>
+                        <outlet property="taskName" destination="kv3-sW-LGK" id="7nD-oP-bTh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peH-RG-bh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
