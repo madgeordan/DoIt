@@ -10,6 +10,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Complete View Controller-->
+        <scene sceneID="Igr-Os-ODV">
+            <objects>
+                <viewController id="pZf-T3-vab" customClass="CompleteViewController" customModule="doit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pn1-to-SYs"/>
+                        <viewControllerLayoutGuide type="bottom" id="hXu-xG-xnI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9C6-s2-gaJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jib-pE-vW4">
+                                <rect key="frame" x="145" y="84" width="85" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cE-M0-G5F">
+                                <rect key="frame" x="164" y="138" width="46" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="done"/>
+                                <connections>
+                                    <action selector="taskCompleted:" destination="pZf-T3-vab" eventType="touchUpInside" id="eog-dh-d43"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jib-pE-vW4" firstAttribute="centerX" secondItem="9C6-s2-gaJ" secondAttribute="centerX" id="1wB-aY-fJw"/>
+                            <constraint firstItem="0cE-M0-G5F" firstAttribute="top" secondItem="Jib-pE-vW4" secondAttribute="bottom" constant="30" id="T9Y-JP-7lm"/>
+                            <constraint firstItem="0cE-M0-G5F" firstAttribute="centerX" secondItem="9C6-s2-gaJ" secondAttribute="centerX" id="iR1-xK-HPV"/>
+                            <constraint firstItem="Jib-pE-vW4" firstAttribute="top" secondItem="Pn1-to-SYs" secondAttribute="bottom" constant="20" id="mGn-79-DLp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="taskName" destination="Jib-pE-vW4" id="RYV-Ph-rbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIg-Wn-fBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="815"/>
+        </scene>
         <!--doit-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -46,6 +89,7 @@
                     <connections>
                         <outlet property="tableView" destination="KFl-5c-1Jg" id="Ne2-kg-j9I"/>
                         <segue destination="zne-Db-Cd2" kind="show" identifier="addSegue" id="Dwg-iA-NnU"/>
+                        <segue destination="pZf-T3-vab" kind="show" identifier="completeSegue" id="5Ab-2c-AFa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -139,7 +183,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIl-6s-QH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286" y="124"/>
+            <point key="canvasLocation" x="1057" y="-790"/>
         </scene>
     </scenes>
 </document>
