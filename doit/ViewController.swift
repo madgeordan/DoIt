@@ -24,22 +24,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "0"
+        let task = tasks[indexPath.row]
+        if task.important {
+            cell.textLabel?.text = "❗️\(task.name)"
+        } else {
+            cell.textLabel?.text = "     \(task.name)"
+        }
         return cell
     }
     
     func makeTasks() -> [Task] {
         let task0 = Task()
-        task0.name = ""
+        task0.name = "1"
         task0.important = true
-        return [task0]
+        let task1 = Task()
+        task1.name = "1"
+        task1.important = false
+        return [task0, task1]
     }
     
-    
+    @IBAction func addButton(_ sender: Any) {
+        performSegue(withIdentifier: "addSegue", sender: nil)
+    }
 }
 
