@@ -14,18 +14,18 @@ class CompleteViewController: UIViewController {
     @IBOutlet weak var taskName: UILabel!
     
     var VC = ViewController()
-    var task = Task()
+    var task: Task? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        taskName.text = task.name
+        taskName.text = task!.name
         
     }
     
     @IBAction func taskCompleted(_ sender: Any) {
-        VC.tasks.remove(at: VC.selectedIndex)
-        VC.tableView.reloadData()
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        context.delete(task!)
         navigationController!.popViewController(animated: true)
     }
 

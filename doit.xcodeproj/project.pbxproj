@@ -15,7 +15,6 @@
 		A2BD836B1EF13F3500F4B20F /* doit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2BD83691EF13F3500F4B20F /* doit.xcdatamodeld */; };
 		A2BD836D1EF13F3500F4B20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2BD836C1EF13F3500F4B20F /* Assets.xcassets */; };
 		A2BD83701EF13F3500F4B20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BD836E1EF13F3500F4B20F /* LaunchScreen.storyboard */; };
-		A2BD83781EF145B600F4B20F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD83771EF145B600F4B20F /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		A2BD836C1EF13F3500F4B20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2BD836F1EF13F3500F4B20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2BD83711EF13F3500F4B20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2BD83771EF145B600F4B20F /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 				A25E04001EF2933600F957B2 /* AddViewController.swift */,
 				A25E04021EF29E6A00F957B2 /* CompleteViewController.swift */,
 				A2BD83661EF13F3400F4B20F /* Main.storyboard */,
-				A2BD83771EF145B600F4B20F /* Task.swift */,
 				A2BD836C1EF13F3500F4B20F /* Assets.xcassets */,
 				A2BD836E1EF13F3500F4B20F /* LaunchScreen.storyboard */,
 				A2BD83711EF13F3500F4B20F /* Info.plist */,
@@ -150,7 +147,6 @@
 			files = (
 				A25E04011EF2933600F957B2 /* AddViewController.swift in Sources */,
 				A2BD836B1EF13F3500F4B20F /* doit.xcdatamodeld in Sources */,
-				A2BD83781EF145B600F4B20F /* Task.swift in Sources */,
 				A2BD83651EF13F3400F4B20F /* ViewController.swift in Sources */,
 				A2BD83631EF13F3400F4B20F /* AppDelegate.swift in Sources */,
 				A25E04031EF29E6A00F957B2 /* CompleteViewController.swift in Sources */,

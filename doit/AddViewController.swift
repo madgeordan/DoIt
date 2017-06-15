@@ -19,11 +19,14 @@ class AddViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func taskAdd(_ sender: Any) {
-        let task = Task()
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let task = Task(context: context)
         task.name = taskName.text!
         task.important = taskImportant.isOn
-        VC.tasks.append(task)
-        VC.tableView.reloadData()
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
         navigationController!.popViewController(animated: true)
     }
 }
